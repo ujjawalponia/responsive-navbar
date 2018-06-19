@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainav{
+  overflow: hidden;
+  position:fixed;
+  top: 0;
+  width: 100%;
+  height: 6em;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
+  box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
+}
+    
+.topnav {
+  width: 80%;
+  margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    height: 2.5rem;
+    margin-top: 1.5rem;
+    float: left;
+}
+
+.topnav-right {
+    float: right;
+}
+    
+.topnav li {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 8px 22px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.topnav li:hover {
+  box-shadow:2px 4px 8px 0px rgba(46,61,73,0.2);
+  background-color:#02b7e9;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: .25rem;
+}
+
+.topnav .active {
+  background-color: #02b7e9;
+  color: #fff;
+  box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+  border-radius: .25rem;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.main{
+    padding: 16px;
+    margin-top: 6rem;
+}
+    
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+    display: none;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
+    box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
+}
+ 
+
+.sidenav li {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+ 
+
+.sidenav li:hover, .offcanvas li:focus{
+     color: #fff;
+    background: #02b7e9;
+}
+
+.sidenav .active{
+    color: #fff;
+    background: #02b7e9;
+}
+ 
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #02b7e9;
+    text-decoration: none;
+}
+    
+/* Responsive Navbar Start */
+@media screen and (max-width: 600px) {
+    
+    .topnav li {
+      display: none;
+    }
+    
+  .topnav a.icon {
+    float: left;
+    display: block;
+    color: #02b7e9;
+    text-align: center;
+    padding: 8px 11px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid #02b7e9;
+  }
+    
+  .topnav.responsive {
+      position: absolute;
+    }
+    
+  .topnav.responsive .icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+    
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    
+   .mainav {
+     height: 3rem;
+     padding-top: 0.3rem;
+  }
+    
+    .logo {
+        height: 2.5rem;
+        margin-top: 0rem;
+        float: right;
+    }
+    
+    .topnav {
+        width: 90%;
+    }
+    
+    .sidenav {
+        display: block;
+    }
+    
+    .main{
+        margin-top: 3rem;
+    }
+}
+
+/* Responsive Navbar Ends */
